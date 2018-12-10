@@ -19,14 +19,7 @@ $(function(){
 	window.onresize = function(){
 		resetNavHeight();
 	};
-	/*nav英文span设置宽度*/
-	(function (){
-		var $nav = $('#nav');
-		var $spans = $('#nav li span');
-		$spans.each(function(){
-			$(this).width($(this).parent().width()+40);
-		});
-	})();
+	
 	/*首页logo跳转*/
 	(function(){
 		var $imgBtn = $('#nav .imgBtn');
