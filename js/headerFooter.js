@@ -1,10 +1,30 @@
 /*nav英文span设置宽度*/
 	(function (){
+		alert(1);
 		var $nav = $('#nav');
 		var $spans = $('#nav li span');
 		$spans.each(function(){
 			$(this).width($(this).parent().width()+40);
 		});
+	})();
+	/*nav border-bottom宽度*/
+	function resizeWidth (){
+		
+		var $nav = $('#nav');
+		$nav.width($(window).width());
+	}
+	resizeWidth();
+	window.onresize = function(){
+		resizeWidth();
+	};
+	/*中间内容高度*/
+	
+	(function(){
+		var $con = $('#content');
+		var $lis = $con.find('li');
+		var $liHeight = $lis.height()+20;
+		$con.height($liHeight*Math.ceil((($lis.length)/4)));
+
 	})();
 /*footer*/
     (function(){

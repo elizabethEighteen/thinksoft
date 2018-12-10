@@ -1,4 +1,74 @@
 
+#nav {	
+	height: 90px;
+	border-bottom: 1px solid #333;
+	position: fixed;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	.container {
+		width: 960px;
+		height: 90px;
+		margin: 0 auto;
+		position: relative;
+		img {
+			width: 140px;
+			height: 99px;
+			position: absolute;
+			bottom: 0;
+			left: 0px;
+			cursor: pointer;
+		}
+		ul {
+			width: 500px;
+			height: 90px;
+			position: absolute;
+			top: 0;
+			left: 145px;
+			li {
+				float: left;
+				height: 20px;
+				margin-left: 16px;
+				position: relative;
+				padding: 25px 0 25px;
+				a {
+					height: 20px;
+					line-height: 20px;
+					font-size: 16px;
+					color: #222;
+					position: relative;
+					padding: 0 20px 16px;
+					span {
+						height: 12px;
+						line-height: 12px;
+						font-size: 12px;
+						color: #9b9b9b;
+						position: absolute;
+						bottom: 2px;
+						left: 0;
+						text-align: center;
+					}
+				}
+			}
+		}
+		p {
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 14px;
+			color: #fff;
+			text-align: right;
+			background: url(../img/phone.png) no-repeat;
+			background-size: 30px 30px;
+			padding-left: 40px;
+			position: absolute;
+			right: 0px;
+			top: 0;			
+		}
+	}
+}
+
 .blackContainer {
 	background-color: #333;
 }

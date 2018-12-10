@@ -1,22 +1,5 @@
 $(function(){
-	/*nav border-bottom宽度*/
-	function resizeWidth (){
-		var $nav = $('#nav');
-		$nav.width($(window).width());
-	}
-	resizeWidth();
-	window.onresize = function(){
-		resizeWidth();
-	};
-	/*中间内容高度*/
 	
-	(function(){
-		var $con = $('#content');
-		var $lis = $con.find('li');
-		var $liHeight = $lis.height()+20;
-		$con.height($liHeight*Math.ceil((($lis.length)/4)));
-
-	})();
 	/*渲染li*/
 	(function(){	
 		var arr = [25,26,27,28,29,57,58,59,60]

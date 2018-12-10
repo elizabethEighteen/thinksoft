@@ -1,3 +1,34 @@
+body {
+  margin: 0;
+}
+body,
+html {
+  font-family: -apple-system-font, "Helvetica Neue", Tahoma, "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+p,
+ul,
+h1,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 #nav {
   height: 90px;
   border-bottom: 1px solid #333;
