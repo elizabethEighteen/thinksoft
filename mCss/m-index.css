@@ -1,0 +1,603 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body,
+html {
+  font-family: -apple-system-font, "Helvetica Neue", Tahoma, "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.mleft {
+  float: left;
+}
+.mright {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.m-hide {
+  display: none;
+}
+/*变量*/
+body {
+  background-color: #eee;
+  width: 100%;
+  overflow-x: hidden;
+}
+#nav {
+  width: 100%;
+  height: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+#nav .m-header {
+  width: 100%;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#nav .m-header .navBtn {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/more.png) no-repeat;
+  background-size: 1.2rem 1.2rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+#nav .m-header .logo {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 6.88rem;
+}
+#nav .m-header .qq {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/navqq.png) no-repeat;
+  background-size: 1.2rem 1.2rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 2rem;
+}
+#nav .m-header .phone {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/phone.png) no-repeat;
+  background-size: 1.2rem 1.2rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+#nav .m-header .dialog {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  padding-top: 20%;
+  box-sizing: border-box;
+}
+#nav .m-header .dialog .close {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../img/close.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.6rem;
+}
+#nav .m-header .dialog .dialogLogo {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 6.88rem;
+}
+#nav .m-header .dialog ul {
+  width: 80%;
+  margin-left: 10%;
+}
+#nav .m-header .dialog ul li {
+  width: 100%;
+  height: 2rem;
+  border-bottom: 0.04rem solid #999;
+}
+#nav .m-header .dialog ul li.active {
+  background: url(../img/arrowMore.png) no-repeat;
+  background-size: 0.4rem 0.4rem;
+  background-position: right center;
+}
+#nav .m-header .dialog ul li a {
+  width: 100%;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 0.56rem;
+}
+#header {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+#header .banner {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .banner ul {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .banner ul li {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .banner ul li img {
+  width: 100%;
+  height: 50vh;
+}
+#header .headerScriptWrap {
+  width: 90%;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+#header .headerScriptWrap .companyName {
+  position: absolute;
+  border-bottom: 0.04rem solid #fff;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.64rem;
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+#header .headerScriptWrap .detail {
+  position: absolute;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.48rem;
+  color: #fff;
+  top: 1rem;
+  left: 0;
+}
+#header .headerScriptWrap .submitButton {
+  position: absolute;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.56rem;
+  color: #fff;
+  top: 2.8rem;
+  left: 0;
+  background-color: #C0A75E;
+  padding: 0.16rem 0.4rem;
+  border-radius: 0.16rem;
+}
+#con1 {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 2.4rem;
+}
+#con1 .chinaTitle {
+  width: 90%;
+  margin-left: 5%;
+  line-height: 1.4em;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #999;
+}
+#con1 .chinaDetail {
+  width: 90%;
+  margin-left: 5%;
+  line-height: 1.4em;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #999;
+}
+#con1 .imgScript {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 2rem;
+}
+#con1 .imgScript li {
+  width: 100%;
+  margin-top: 2rem;
+}
+#con1 .imgScript li img {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+#con1 .imgScript li .one {
+  width: 100%;
+  line-height: 1.8em;
+  font-size: 0.56rem;
+  color: #000;
+  text-align: center;
+}
+#con1 .imgScript li .three {
+  width: 100%;
+  line-height: 1.4em;
+  font-size: 0.56rem;
+  color: #999;
+  text-align: center;
+}
+#con2 {
+  width: 100%;
+  margin-top: 0.8rem;
+  background-color: #fff;
+  padding-top: 1.2rem;
+}
+#con2 .chineseTitle {
+  width: 90%;
+  margin-left: 5%;
+  line-height: 1.2em;
+  font-size: 0.72rem;
+  color: #999;
+  text-align: center;
+}
+#con2 .lineContainer {
+  width: 90%;
+  margin-left: 5%;
+}
+#con2 .lineContainer .lineH {
+  width: 30%;
+  height: 0.08rem;
+  background-color: #c0a75e;
+  margin: 0.8rem auto;
+}
+#con2 .buttons {
+  width: 90%;
+  margin-left: 5%;
+  border-top: 0.04rem solid #eee;
+  border-left: 0.04rem solid #eee;
+  box-sizing: border-box;
+}
+#con2 .buttons li {
+  float: left;
+  width: 25%;
+  border-right: 0.04rem solid #eee;
+  border-bottom: 0.04rem solid #eee;
+  padding-top: 0.2rem;
+  box-sizing: border-box;
+  padding-bottom: 0.4rem;
+}
+#con2 .buttons li img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+#con2 .buttons li .chinese {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  text-align: center;
+  color: #000;
+  margin-top: 0.2rem;
+}
+#con3 {
+  width: 100%;
+  margin-top: 0.8rem;
+  background-color: #fff;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+#con3 .chinese {
+  width: 90%;
+  margin-left: 5%;
+  line-height: 1.2em;
+  font-size: 0.72rem;
+  color: #999;
+  text-align: center;
+}
+#con3 a {
+  display: block;
+  width: 30%;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.56rem;
+  color: #fff;
+  margin: 0.8rem auto;
+  background-color: #C0A75E;
+  padding: 0.16rem 0;
+  border-radius: 0.16rem;
+  text-align: center;
+}
+#con4 {
+  width: 100%;
+  margin-top: 0.8rem;
+  background-color: #fff;
+}
+#con4 .caseShow {
+  width: 25%;
+  line-height: 3.2rem;
+  border-bottom: 0.08rem solid #c0a75e;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+  font-size: 0.72rem;
+  color: #999;
+}
+#con4 .ulContainer {
+  width: 90%;
+  margin-left: 5%;
+  overflow: hidden;
+}
+#con4 .ulContainer ul {
+  width: 80rem;
+}
+#con4 .ulContainer ul li {
+  float: left;
+  width: 8rem;
+  margin-right: 0.4rem;
+}
+#con4 .ulContainer ul li img {
+  width: 100%;
+}
+#con4 .ulContainer ul li .Title {
+  width: 100%;
+  line-height: 1em;
+  font-size: 0.6rem;
+  color: #000;
+  font-weight: bold;
+  margin: 0.4rem auto;
+  text-align: center;
+}
+#con4 .ulContainer ul li .lineH {
+  width: 15%;
+  height: 0.08rem;
+  background-color: #c0a75e;
+  margin: 0.4rem auto;
+}
+#con4 .ulContainer ul li .time {
+  width: 100%;
+  line-height: 1em;
+  font-size: 0.56rem;
+  color: #999;
+  margin: 0.4rem auto;
+  text-align: center;
+}
+#con4 .ulContainer ul li .monney {
+  width: 100%;
+  line-height: 1em;
+  font-size: 0.56rem;
+  color: #c0a75e;
+  margin: 0.4rem auto;
+  text-align: center;
+}
+#con5 {
+  width: 100%;
+  margin-top: 0.8rem;
+  background-color: #fff;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+}
+#con5 .chineseTitle {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 0.72rem;
+  color: #333;
+  text-align: center;
+  color: #999;
+  margin-bottom: 0.8rem;
+}
+#con5 .lineH {
+  width: 25%;
+  height: 0.08rem;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+  background-color: #c0a75e;
+}
+#con5 .con5Wrap {
+  width: 90%;
+  margin-left: 5%;
+}
+#con5 .con5Wrap ul {
+  width: 100%;
+}
+#con5 .con5Wrap ul li {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  background-color: #eee;
+  padding: 5%;
+  box-sizing: border-box;
+}
+#con5 .con5Wrap ul li .headImage {
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+#con5 .con5Wrap ul li .title {
+  width: 100%;
+  line-height: 1.4em;
+  font-size: 0.56rem;
+}
+#con5 .con5Wrap ul li .time {
+  width: 100%;
+  line-height: 1.8em;
+  font-size: 0.56rem;
+  color: #999;
+}
+#con5 .con5Wrap .moreNews {
+  width: 50%;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  font-size: 0.64rem;
+  color: #999;
+  text-align: center;
+  margin: 0 auto;
+}
+#con6 {
+  width: 100%;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  background-color: #fff;
+}
+#con6 .chineseTitle {
+  width: 100%;
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.72rem;
+  color: #999;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+#con6 .lineH {
+  width: 25%;
+  height: 0.08rem;
+  background-color: #c0a75e;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+#con6 img {
+  width: 100%;
+}
+.blackContainer {
+  width: 100%;
+  background-color: #333;
+}
+.blackContainer .mobileFooter {
+  width: 90%;
+  margin-left: 5%;
+}
+.blackContainer .mobileFooter .chineseOne {
+  width: 100%;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  padding: 0.4rem 0 0.48rem;
+  color: #aaa;
+  border-bottom: 0.04rem solid #999;
+}
+.blackContainer .mobileFooter .chineseTwo {
+  width: 100%;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  padding: 0.4rem 0 0.4rem;
+  color: #aaa;
+}
+.blackContainer .mobileFooter .chineseThree {
+  width: 100%;
+  line-height: 0.56rem;
+  font-size: 0.48rem;
+  padding: 0 0 0.48rem;
+  color: #ddd;
+  border-bottom: 0.04rem solid #999;
+}
+.blackContainer .mobileFooter .chineseFour {
+  width: 100%;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  padding: 0.4rem 0 0.4rem;
+  color: #aaa;
+}
+.blackContainer .mobileFooter .ul2 {
+  width: 100%;
+  height: 0.48rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.04rem solid #999;
+}
+.blackContainer .mobileFooter .ul2 li {
+  float: left;
+  margin-right: 0.4rem;
+}
+.blackContainer .mobileFooter .ul2 li a {
+  display: block;
+  color: #ddd;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+}
+.blackContainer .mobileFooter .chineseFive {
+  width: 100%;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  padding: 0.4rem 0 0.4rem;
+  color: #aaa;
+}
+.blackContainer .mobileFooter .ul3 {
+  width: 100%;
+  height: 0.48rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.04rem solid #999;
+}
+.blackContainer .mobileFooter .ul3 li {
+  float: left;
+  margin-right: 0.4rem;
+}
+.blackContainer .mobileFooter .ul3 li a {
+  display: block;
+  color: #ddd;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+}
+.blackContainer .mobileFooter .chineseSix {
+  width: 100%;
+  padding: 0.4rem 0;
+  line-height: 1.4em;
+  font-size: 0.48rem;
+  color: #ddd;
+}

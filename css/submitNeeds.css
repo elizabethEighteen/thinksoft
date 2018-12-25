@@ -29,7 +29,14 @@ a {
   display: block;
   clear: both;
 }
+.pc-hide {
+  display: none;
+}
+body {
+  margin-top: 91px;
+}
 #nav {
+  width: 100%;
   height: 90px;
   border-bottom: 1px solid #333;
   position: fixed;
@@ -39,7 +46,8 @@ a {
   z-index: 10;
 }
 #nav .container {
-  width: 960px;
+  width: 90%;
+  max-width: 1140px;
   height: 90px;
   margin: 0 auto;
   position: relative;
@@ -58,30 +66,30 @@ a {
   position: absolute;
   top: 0;
   left: 145px;
+  padding-top: 20px;
 }
 #nav .container ul li {
   float: left;
-  height: 20px;
-  margin-left: 16px;
+  height: 50px;
+  margin-left: 30px;
   position: relative;
-  padding: 25px 0 25px;
+  padding: 5px 0;
 }
 #nav .container ul li a {
+  display: block;
   height: 20px;
   line-height: 20px;
   font-size: 16px;
   color: #222;
-  position: relative;
-  padding: 0 20px 16px;
+  text-align: center;
+  margin-bottom: 3px;
 }
-#nav .container ul li a span {
+#nav .container ul li span {
+  display: block;
   height: 12px;
   line-height: 12px;
   font-size: 12px;
   color: #9b9b9b;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
   text-align: center;
 }
 #nav .container p {
@@ -207,7 +215,7 @@ a {
   height: 30px;
 }
 #footer .ul1 li a {
-  display: inline-block;
+  display: block;
   width: 210px;
   height: 30px;
   line-height: 30px;
@@ -227,7 +235,7 @@ a {
   height: 30px;
 }
 #footer .ul2 li a {
-  display: inline-block;
+  display: block;
   width: 210px;
   height: 30px;
   line-height: 30px;
@@ -247,11 +255,226 @@ a {
   height: 30px;
 }
 #footer .ul3 li a {
-  display: inline-block;
+  display: block;
   width: 210px;
   height: 30px;
   line-height: 30px;
   font-size: 14px;
   color: #fff;
   text-align: center;
+}
+#head {
+  width: 100%;
+  height: 200px;
+  background-color: #393D42;
+  padding-top: 40px;
+}
+#head img {
+  display: block;
+  width: 1023px;
+  height: 115px;
+  margin: 0 auto;
+}
+#content {
+  width: 60%;
+  max-width: 1140px;
+  padding-top: 50px;
+  margin-left: 20%;
+  padding-bottom: 50px;
+}
+#content .demand {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#content .demand .font {
+  width: 100px;
+  margin-right: 5px;
+}
+#content .demand .font .chinese {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#content .demand .font .chinese span {
+  color: red;
+}
+#content .demand .font .english {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 12px;
+}
+#content .demand .select1 {
+  width: calc(100% - 367px);
+  max-width: 200px;
+  height: 42px;
+  margin-right: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+#content .demand .select1 select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+#content .demand .select1 select::-ms-expand {
+  display: none;
+}
+#content .demand .select2 {
+  width: 237px;
+  height: 42px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+#content .demand .select2 select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+#content .demand .select2 select::-ms-expand {
+  display: none;
+}
+#content .item {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 30px;
+}
+#content .item .font {
+  width: 100px;
+  margin-right: 5px;
+}
+#content .item .font .chinese {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#content .item .font .chinese span {
+  color: red;
+}
+#content .item .font .english {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 12px;
+}
+#content .item input {
+  display: block;
+  width: calc(100% - 150px);
+  height: 42px;
+  outline: none;
+  text-indent: 1em;
+  font-size: 14px;
+}
+#content .describe {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+#content .describe .font {
+  width: 100px;
+  margin-right: 5px;
+}
+#content .describe .font .chinese {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#content .describe .font .chinese span {
+  color: red;
+}
+#content .describe .font .english {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 12px;
+}
+#content .describe textarea {
+  display: block;
+  width: calc(100% - 150px);
+  height: 200px;
+  outline: none;
+  text-indent: 1em;
+  font-size: 14px;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+#content .describe .chineseOne {
+  margin-top: 5px;
+  width: calc(100% - 150px);
+  line-height: 1.2em;
+  font-size: 13px;
+  margin-left: 105px;
+  color: #4A4A4A;
+}
+#content .describe .englishOne {
+  margin-top: 3px;
+  width: calc(100% - 150px);
+  line-height: 1.2em;
+  font-size: 13px;
+  margin-left: 105px;
+  color: #9B9B9B;
+}
+#content .describe .upLoad {
+  margin-top: 20px;
+  width: calc(100% - 150px);
+  margin-left: 105px;
+  position: relative;
+}
+#content .describe .upLoad .chineseTwo {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #4A90E2;
+}
+#content .describe .upLoad .englishTwo {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #4A90E2;
+}
+#content .describe .upLoad input {
+  width: 260px;
+  height: 30px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+#content .btn {
+  width: 122px;
+  height: 44px;
+  padding: 2px 0 5px;
+  box-sizing: border-box;
+  background-color: #c0a75e;
+  border-radius: 3px;
+  margin: 50px auto;
+}
+#content .btn .chinese {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+#content .btn .english {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
 }

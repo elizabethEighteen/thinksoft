@@ -29,6 +29,83 @@ a {
   display: block;
   clear: both;
 }
+.pc-hide {
+  display: none;
+}
+body {
+  margin-top: 91px;
+}
+#nav {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #333;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#nav .container {
+  width: 90%;
+  max-width: 1140px;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+}
+#nav .container img {
+  width: 140px;
+  height: 99px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  cursor: pointer;
+}
+#nav .container ul {
+  width: 500px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 145px;
+  padding-top: 20px;
+}
+#nav .container ul li {
+  float: left;
+  height: 50px;
+  margin-left: 30px;
+  position: relative;
+  padding: 5px 0;
+}
+#nav .container ul li a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 3px;
+}
+#nav .container ul li span {
+  display: block;
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #9b9b9b;
+  text-align: center;
+}
+#nav .container p {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+  background: url(../img/phone.png) no-repeat;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
 .blackContainer {
   background-color: #333;
 }
@@ -138,7 +215,7 @@ a {
   height: 30px;
 }
 #footer .ul1 li a {
-  display: inline-block;
+  display: block;
   width: 210px;
   height: 30px;
   line-height: 30px;
@@ -158,7 +235,7 @@ a {
   height: 30px;
 }
 #footer .ul2 li a {
-  display: inline-block;
+  display: block;
   width: 210px;
   height: 30px;
   line-height: 30px;
@@ -178,7 +255,7 @@ a {
   height: 30px;
 }
 #footer .ul3 li a {
-  display: inline-block;
+  display: block;
   width: 210px;
   height: 30px;
   line-height: 30px;
@@ -188,81 +265,14 @@ a {
 }
 body {
   background-color: #f9f9f9;
-}
-#nav {
-  height: 90px;
-  border-bottom: 1px solid #333;
-  position: fixed;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-#nav .container {
-  width: 960px;
-  height: 90px;
-  margin: 0 auto;
-  position: relative;
-}
-#nav .container img {
-  width: 140px;
-  height: 99px;
-  position: absolute;
-  bottom: 0;
-  left: 0px;
-  cursor: pointer;
-}
-#nav .container ul {
-  width: 500px;
-  height: 90px;
-  position: absolute;
-  top: 0;
-  left: 145px;
-}
-#nav .container ul li {
-  float: left;
-  height: 20px;
-  margin-left: 16px;
-  position: relative;
-  padding: 25px 0 25px;
-}
-#nav .container ul li a {
-  height: 20px;
-  line-height: 20px;
-  font-size: 16px;
-  color: #222;
-  position: relative;
-  padding: 0 20px 16px;
-}
-#nav .container ul li a span {
-  height: 12px;
-  line-height: 12px;
-  font-size: 12px;
-  color: #9b9b9b;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  text-align: center;
-}
-#nav .container p {
-  width: 200px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 14px;
-  color: #fff;
-  text-align: right;
-  background: url(../img/phone.png) no-repeat;
-  background-size: 30px 30px;
-  padding-left: 40px;
-  position: absolute;
-  right: 0px;
-  top: 0;
+  padding-top: 80px;
 }
 #header {
-  width: 960px;
+  width: 90%;
+  max-width: 1140px;
   height: 94px;
   background-color: #fff;
-  margin: 171px auto;
+  margin: 0 auto;
   position: relative;
   margin-bottom: 80px;
 }
@@ -321,26 +331,28 @@ body {
   text-align: center;
 }
 #content {
-  width: 960px;
+  width: 90%;
+  max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 #content ul {
-  width: 980px;
+  width: 100%;
 }
 #content ul li {
   float: left;
-  width: 225px;
-  height: 350px;
+  width: 23%;
   background-color: #fff;
-  margin: 0 20px 20px 0;
+  margin: 1%;
+  padding-bottom: 10px;
 }
 #content ul li img {
-  width: 225px;
-  height: 237px;
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
 }
 #content ul li .title {
-  height: 16px;
+  width: 100%;
   line-height: 16px;
   font-size: 16px;
   color: #222;
@@ -353,7 +365,7 @@ body {
   margin: 15px auto;
 }
 #content ul li .time {
-  height: 13px;
+  width: 100%;
   line-height: 13px;
   font-size: 13px;
   color: #767676;
@@ -361,7 +373,7 @@ body {
   margin-bottom: 15px;
 }
 #content ul li .monney {
-  height: 13px;
+  width: 100%;
   line-height: 13px;
   font-size: 13px;
   color: #F5A623;
